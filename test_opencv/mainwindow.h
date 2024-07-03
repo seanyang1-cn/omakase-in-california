@@ -4,6 +4,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,7 +24,10 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_loadImage_clicked();
+
 private:
     Ui::MainWindow *ui;
+    void progressbarInit();
 };
 #endif // MAINWINDOW_H
